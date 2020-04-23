@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoops n' Loops</title>
+          <!-- Fonts -->
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma+2:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+          <!-- Styling -->
+          <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile-hoops.css">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Baloo+Tamma+2:400,700&display=swap&subset=latin-ext');
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Main Styling */
+
+      body {
+        font-family: 'Baloo Tamma 2', cursive;
+        background-color: black;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      /* Navbar */
+
+      .navbar {
+        background-color: #333;
+        color: #fff;
+        overflow: auto;
+        opacity: 0.9;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .navbar .logo {
+        float: left;
+        padding: 20px;
+      }
+
+      .navbar ul {
+        list-style: none;
+        float: right;
+      }
+
+      .navbar ul li {
+        float: left;
+      }
+
+      .navbar ul li a {
+        display: block;
+        padding: 20px;
+        text-align: center;
+        
+      }
+
+      .navbar ul li:hover {
+        background: #444;
+        color: #f7c08a;
+      }
+
+      /* opening Image */
+
+      .img-container {
+        background: url(https://images.unsplash.com/photo-1587355981113-16e339031254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=929&q=80) no-repeat center center/cover;
+        height: 100vh;
+        
+      }
+
+      .img-container .card {
+        text-align: center;
+      }
+
+      .img-container .card .back-card {
+        display: inline-block;
+        background: #333;
+        opacity: 0.9;
+        padding: 20px;
+        border-radius: 7%;
+        margin: 200px;
+      }
+
+      .img-container .card .back-card h1 {
+        color: #fff;
+        padding: 0 30px 10px 30px;
+      }
+
+      /* Button */
+
+      .btn {
+        display: inline-block;
+        background: #976417;
+        padding: 10px;
+        border-radius: 7%;
+        opacity: 1;
+      }
+
+      .btn:hover {
+        color: #333;
+        background:#f7c08a;
+        font-weight: bold;
+      }
+
+      /* Flexbox */
+
+      .flex-container {
+        display: flex;
+        background: #3333;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .item {
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5%;
+        flex: 2;
+        height: 300px;
+        color: rgb(158, 157, 157);
+      }
+
+      .item-1 {
+        align-self: stretch;
+        background-image: url(https://images.unsplash.com/photo-1587493681629-6b4c02555fee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60);
+        background-size: cover;
+      }
+
+      .item-2 {
+        align-self: stretch;
+        background-image: url(https://images.unsplash.com/photo-1587497063995-9a131dcaff7a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60);
+        background-size: cover;
+      }
+
+      .item-3 {
+        align-self: stretch;
+        background-image: url(https://images.unsplash.com/photo-1587496618424-3df408a0966d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60);
+        background-size: cover;
+      }
+
+      .item-4 {
+        align-self: stretch;
+        height: 200px;
+      }
+
+      .item-4 {
+        align-self: stretch;
+        height: 200px;
+      }
+
+      .item-5 {
+        align-self: stretch;
+        height: 200px;
+      }
+
+      .item-6 {
+        align-self: stretch;
+        height: 200px;
+      }
+
+      footer {
+        background: #333;
+        color: #fff;
+        padding: 30px 0 0 0;
+        text-align: center;
+      }
+      
+      .social {
+        font-size: 30px;
+        text-align: center;
+      }
+
+      
+    </style>
+</head>
+<body>
+  
+<!-- Navbar -->
+
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo"><a href="#">Hoops n' Loops</a></h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main image -->
+  <header class="img-container">
+    <div class="card">
+      <div class="back-card">
+       <h1>Get Loops on Hoops!</h1>
+       <a href="#" class="btn">Learn More</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Images -->
+  
+  <section id="about">
+    <div class="flex-container">
+      <div class="item item-1">
+      </div>
+      <div class="item item-2">
+      </div>
+      <div class="item item-3">
+      </div>
+      
+    </div>
+    
+    <div class="flex-container">
+      <div class="item item-4">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus incidunt, impedit sequi rerum alias totam!</p>
+      </div>
+      <div class="item item-5">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus accusamus nisi eligendi modi perferendis maiores.</p>
+      </div>
+      <div class="item item-6">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ad ducimus rerum temporibus eum quia.</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <footer>
+    <div class="social">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-reddit"></i></a>
+    </div>
+    <p class="copy">Website design by <a href="http://danielbergmann.me/">Daniel Bergmann</a>. 2020&copy;</p>
+  </footer>
+  
+</body>
+</html>

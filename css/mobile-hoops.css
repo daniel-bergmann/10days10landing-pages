@@ -1,0 +1,52 @@
+
+
+/* Navbar */
+
+.navbar {
+  width: 100%;
+  overflow: hidden;
+}
+.navbar .logo {
+  float: none;
+  text-align: center;
+  padding: 10px 0 0 0;
+  font-size: 30px;
+}
+
+.navbar ul, .navbar ul li {
+  float: none;
+}
+
+.navbar ul li a {
+  padding: 10px;
+}
+
+      /* opening Image */
+
+.img-container {
+  height: 100%;
+}
+
+.img-container .card .back-card {
+  margin: 150px 50px;
+  padding: 5px;
+
+}
+
+.img-container .card .back-card h1{
+  font-size: 20px;
+}
+
+/* Button */
+
+.btn {
+  margin-bottom: 10px;
+}
+
+/* Flex  */
+
+.flex-container {
+  flex-direction: column;
+  height: 1200px;
+}
+
