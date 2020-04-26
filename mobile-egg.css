@@ -1,0 +1,38 @@
+.navbar .logo {
+  float: none;
+  display: block;
+  text-align: center;
+  padding: 10 0 0 0;
+  border-bottom: 1px dotted #333;
+}
+
+.navbar ul {
+  float: none;
+  display: block;
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+
+.navbar ul li {
+  float: none;
+  padding: 0 0 5px 0;
+  margin: 0;
+}
+
+.navbar ul li a {
+  padding: 0;
+}
+
+.img-container {
+  height: 70vh;
+}
+
+.img-container .card .back-card {
+  margin-top: 380px;
+}
+
+.flex-container {
+  flex-flow: column wrap;
+  height: 800px;
+}
+

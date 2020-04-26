@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eggs</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile-egg.css">
+  
+  <style>
+
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Styling */
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  background-color: black;
+  color: rgb(240, 234, 234);
+  width: 100%;
+  overflow: auto;
+  opacity: 0.8;
+
+}
+
+.navbar .logo {
+  float: left;
+  padding: 20px;
+}
+
+.navbar ul {
+  float: right;
+  list-style: none;
+}
+
+.navbar ul li {
+  float: left;
+  padding: 20px 20px;
+}
+
+.navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar ul li:hover {
+  background: #444;
+  color: #f7c08a;
+}
+
+/* Opening Image */
+
+.img-container {
+  background: url(https://images.unsplash.com/photo-1547919760-1a76e51458cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60) no-repeat center center/cover;
+  height: 100vh;
+}
+
+.img-container .card {
+  text-align: center;
+}
+
+.img-container .card .back-card {
+  display: inline-block;
+  background: rgb(216, 206, 163);
+  opacity: 0.9;
+  padding: 15px;
+  border-radius: 7%;
+  margin-top: 200px;
+}
+
+ .back-card h1 {
+  font-size: 40px;
+  color: rgb(240, 234, 234);
+  padding: 0 30px 10px 30px;
+  text-shadow: 2px 2px #4b1515;
+}
+
+/* Button */
+
+.btn {
+  font-size: larger;
+  display: inline-block;
+  color: rgb(53, 31, 31);
+  text-shadow: 2px 2px #755959;
+  background: rgb(204, 65, 65);
+  padding: 15px;
+  border-radius: 7%;
+}
+
+.btn:hover {
+  background: rgb(199, 99, 99);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+/* Flexbox */
+
+.flex-container {
+  display: flex;
+  background: black;
+  flex-flow: row wrap;
+}
+
+.item {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5%;
+  flex: 2;
+  height: 300px;
+  color: black;
+}
+
+.item-1 {
+  background: url(https://images.unsplash.com/photo-1565636546452-3bb5a338729b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60) no-repeat center center/cover;
+  align-self: stretch;
+}
+
+.item-2 {
+  background: url(https://images.unsplash.com/photo-1547930134-d87519ef15a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60) no-repeat center center/cover;
+  align-self: stretch;
+}
+
+.item-3 {
+  background: url(https://images.unsplash.com/photo-1541522318014-d696d8cb4173?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60) no-repeat center center/cover;
+  align-self: stretch;
+}
+
+.item-4 {
+  align-self: stretch;
+  color: rgb(240, 234, 234);}
+
+.item-5 {
+  align-self: stretch;
+  color: rgb(240, 234, 234);}
+
+.item-6 {
+  align-self: stretch;
+  color: rgb(240, 234, 234);}
+
+  /* Footer */
+
+footer {
+  color: rgb(240, 234, 234);
+  background-color: black;
+  padding: 50px 0 20px 0;
+  text-align: center;
+}
+
+.social i {
+  color: rgb(240, 234, 234);
+  font-size: 50px;
+  text-decoration: none;
+  padding-bottom: 30px;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  
+  <nav>
+    <div class="navbar">
+      <h1 class="logo">Eggs</h1>
+      <ul>
+        <li><a href="#about"></a>Our Eggs</li>
+        
+      </ul>
+    </div>
+  </nav>
+    <!-- Main image -->
+  <header class="img-container">
+    <div class="card">
+      <div class="back-card">
+        <a href="#"><h1>We Got Eggs!</h1></a>
+        <a href="#" class="btn">Try Our Eggs!</a>
+      </div>
+    </div>
+  </header>
+    <!-- Start of egg introduction flexbox -->
+ 
+  <section id="about">
+    <div class="flex-container">
+      <div class="item item-1">1</div>
+      <div class="item item-2">2</div>
+      <div class="item item-3">3</div>
+    </div>
+    <div class="flex-container">
+      <div class="item item-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum facilis quibusdam officia velit amet dolorum!</div>
+      <div class="item item-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptas doloribus fugiat accusamus incidunt enim?</div>
+      <div class="item item-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, eum cum quod molestias nam dolorem!</div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social">
+      <a href="#"><i class="fab fa-weibo"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-reddit"></i></a>
+    </div>
+    <p class="copy">Website design by <a href="http://danielbergmann.me/">Daniel Bergmann</a>. 2020&copy;</p>
+  </footer>
+
+
+</body>
+</html>
