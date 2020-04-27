@@ -1,0 +1,46 @@
+
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 150px;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.navbar ul a {
+    border-top: 1px black dotted;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+/* Main Image */
+
+.bg-image .content {
+    display: flex;
+    height: 70%;
+}
+
+/* Flex columns */
+
+.flex-columns .row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flex-columns .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}

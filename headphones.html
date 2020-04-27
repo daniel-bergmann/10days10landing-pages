@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <!-- Mobile CSS -->
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="headphones-mobile.css">
+
+    <title>HeadphoneBuzz</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Comic+Neue:400,700&display=swap');
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Comic Neue', cursive;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+
+        /* Utilities */
+
+        .text-primary, i {
+            color: rgb(86, 80, 172);
+            font-size: 35px;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            color: #fff;
+            opacity: 0.8;
+            width: 100%;
+            height: 70px;
+            position: fixed;
+            top: 0px;
+            padding: 0 30px;
+        }
+
+        .navbar a {
+            color: #fff;
+            padding: 10px 20px;
+            margin: 0 5px;
+        }
+
+        .navbar a:hover {
+            border-bottom:  rgb(212, 130, 212) 2px dotted;
+            opacity: none;
+            color: rgb(133, 102, 128);
+        }
+
+        .navbar ul {
+            display: flex;
+        }
+
+        .bg-image {
+            background: url(https://images.unsplash.com/photo-1567928513899-997d98489fbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60) no-repeat center center/cover;
+            height: 100vh;
+            position: relative;
+            color: #fff;
+        }
+
+        .bg-image .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            padding: 0 30px;
+        }
+
+        .bg-image .content h1 {
+            font-size: 55px;
+            text-align: center;
+        }
+
+        .bg-image .content p {
+            font-size: 23px;
+            text-align: center;
+        }
+
+        /* Button */
+
+        .btn {
+            cursor: pointer;
+            display: inline-block;
+            padding: 30px 30px;
+            margin-top: 20px;
+            background-color: rgb(212, 130, 212);
+            border: none;
+            border-radius: 50%;
+            color:rgb(14, 15, 14);
+            font-size: 25px;
+            border: black 3px dotted;
+        }
+
+        .btn:hover {
+            opacity: 0.5;
+            border: none;
+        }
+
+        .btn-2 {
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            padding: 30px 30px;
+            margin-top: 20px;
+            background-color: rgb(212, 130, 212);
+            border: none;
+            border-radius: 50%;
+            color:rgb(14, 15, 14);
+            font-size: 25px;
+            border: black 3px dotted;
+        }
+
+        .btn:hover {
+            opacity: 0.5;
+            border: none;
+        }
+
+
+        .bg-image::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgb(0,0,0,0.6);
+        }
+
+        .bg-image * {
+            z-index: 10;
+        }
+
+        .flex-columns .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .flex-columns .column {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100%;
+            flex: 1;
+        }
+
+        .flex-columns .column .column-1,
+        .flex-columns .column .column-2 {
+            height: 100%;
+        }
+
+        .flex-columns img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .flex-columns .column-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            background-color: rgb(236, 221, 233);
+        }
+
+        footer {
+            background-color: #333;
+            text-align: center;
+            color: #fff;
+            padding: 40px 0 0 0;
+        }
+
+        .social i {
+            color: #fff;
+            padding: 30px 0;
+        }
+        
+        .social i:hover {
+            color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="bg-image">
+        <div class="navbar">
+            <h1 class="logo">
+                <i class="fas fa-headphones-alt"></i>Headphone<span class="text-primary">Buzz</span>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Selection</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1>We listen through headphones</h1>
+            <p>We have the best selection of modern headphone technology</p>
+            <a href="#" class="btn"><i class="fas fa-chevron-down"></i>See Selection</a>
+        </div>
+    </header>
+
+    <section class="selection flex-columns">
+        <div class="row">
+            <div class="column">
+                <div class="column-1">
+                    <img src="https://images.unsplash.com/photo-1579065560489-989b0cc394ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60" alt="image of headphones">
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="column-2">
+                    <h4>We have the best of the best</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut amet accusantium consequatur id, consectetur perspiciatis! Rerum excepturi voluptate iusto in enim. Possimus dignissimos dolorem iure suscipit nobis, obcaecati aperiam quasi quibusdam fugit ex neque necessitatibus, eius officia molestiae accusamus culpa vero? Impedit, deleniti? Ipsum quos consequatur fugiat modi saepe odit.</p>
+                </div>
+
+                <div class="column-2">
+                    <h4>Experience from all over the world</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut amet accusantium consequatur id, consectetur perspiciatis! Rerum excepturi voluptate iusto in enim. Possimus dignissimos dolorem iure suscipit nobis, obcaecati aperiam quasi quibusdam fugit ex neque necessitatibus, eius officia molestiae accusamus culpa vero? Impedit, deleniti? Ipsum quos consequatur fugiat modi saepe odit.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="social">
+          <a href="#"><i class="fab fa-weibo"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-reddit"></i></a>
+        </div>
+        <p class="copy">Website design by <a href="http://danielbergmann.me/">Daniel Bergmann</a>. 2020&copy;</p>
+      </footer>
+</body>
+</html>
